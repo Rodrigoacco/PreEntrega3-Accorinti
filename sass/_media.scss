@@ -1,0 +1,280 @@
+body{
+    background-color: lightgrey;
+
+    @media(min-width: 768px){
+        background-color: antiquewhite;
+    }
+}
+.titulo{
+    background-image: url(../img/taller-mecanicocel.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 200px;
+    margin-bottom:50px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    @media(min-width: 768px){
+        background-image: url(../img/taller-mecanico1.jpg);
+        line-height: 550px;
+        height: 600px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom:50px;
+    }
+}
+.info{
+    padding: 4%;
+    margin: 2%;
+    font-family: 'Roboto', sans-serif;
+    border: solid;
+
+    @media(min-width: 768px){
+        text-align: center;
+    }
+
+    @media(min-width: 1024px){
+        padding-top: 5%;
+        margin-left: 3%;
+        margin-right: 60%;
+        text-align: center;
+    }
+}
+.video{
+    height: 220px;
+    width: 320px;
+    padding-top: 5%;
+
+    @media(min-width: 500px){
+        height: 420px;
+        width: 600px;
+    }
+
+    @media(min-width: 1024px){
+        margin-left: 130%;
+    }
+}
+.nosotros__trabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+
+    @media(min-width: 1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "title title title title"
+        "parrafo parrafo photo1 photo2"
+        "parrafo parrafo photo3 photo4";
+    }
+    .title{ 
+        grid-area: title;
+    }
+    .parrafo{ 
+        grid-area: parrafo;
+    }
+    .photo1{ 
+        grid-area: photo1;
+    }
+    .photo2{ 
+        grid-area: photo2; 
+    }
+    .photo3{ 
+        grid-area: photo3; 
+    }
+    .photo4{
+        grid-area: photo4; 
+    }
+}
+.seguros{
+    padding: 3%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    @media(min-width: 1024px){
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.seguros1{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: 500px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-evenly;
+    }
+}
+.seguros2{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(min-width: 500px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-evenly;
+        margin-top: 4%;
+    }
+}
+.imagen__logo{
+    height: 300px;
+    width: 300px;
+
+    @media(min-width: 500px){
+        height: 100px;
+        width: 100px;
+    }
+
+    @media(min-width: 1024px){
+        height: auto;
+        width: auto;
+    }
+}
+.contacto{
+    padding: 3%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    @media(min-width: 1024px){
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.ubicacion2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    padding: 3%;
+
+    @media(min-width: 1024px){
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.ubicacion3{
+    height: 220px;
+    width: 320px;
+    padding: 3%;
+
+    @media(min-width: 500px){
+        height: 450px;
+        width: 768px;
+        padding: 3%;
+    }
+
+    @media(min-width: 1024px){
+        width: 600px;
+        height: 400px;
+        padding: 0%;
+    }
+}
+.hoy{
+    font-family: 'Roboto', sans-serif;
+    padding: 2%;
+    text-align: center;
+
+    @media(min-width: 1024px){
+        text-align: center;
+        margin-bottom: 5%;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.formulario{
+    padding: 3%;
+    margin: 3%;
+
+    @media(min-width: 1024px){
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+.pie__de--pagina{
+    padding: 4%;
+    background-color: rgb(50, 50, 50);
+    font-family: 'Roboto', sans-serif;
+
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+.trayectoria{
+    padding-bottom: 2%;
+    color: white;
+
+    @media(min-width: 1024px){
+        margin-left: 5%;
+        margin-right: 10%;
+        padding: 5% 5% 5% 0%;
+        color: white;
+    }
+}
+.servicios{
+    padding-bottom: 2%;
+    color: white;
+
+    @media(min-width: 1024px){
+        margin-right: 10%;
+        padding: 5% 5% 5% 0%;
+        color: white;
+        justify-items: center;
+    }
+}
+.visitanos{
+    color: white;
+
+    @media(min-width: 1024px){
+        padding: 5% 5% 5% 0%;
+        margin-right: 5%;
+        color: white;
+    }
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4%;
+    margin: 1%;
+
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+}

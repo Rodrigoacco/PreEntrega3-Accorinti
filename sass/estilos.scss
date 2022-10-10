@@ -1,0 +1,136 @@
+@import "fuentes";
+@import "generales";
+@import "media";
+@import "header";
+@import "footer";
+/*mobile first*/
+
+/*CUERPO*/
+.subtitulo{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.titulo__nosotros{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 3%;
+    padding-bottom: 5%;
+}
+.parrafo__nosotros{
+    font-family: 'Poppins', sans-serif;
+    font-size: 120%;
+}
+.service{  
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "title title title"
+    "figure1 figure2 figure3"
+    "figcaption1 figcaption2 figcaption3"
+    "figure4 figure5 figure6"
+    "figcaption4 figcaption5 figcaption6";
+    }
+.title{ 
+    grid-area: title;
+    padding: 3%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.figure1{ 
+    grid-area: figure1;
+}
+.figure2{ 
+    grid-area: figure2; 
+}
+.figure3{ 
+    grid-area: figure3; 
+}
+.figcaption1{ 
+    grid-area: figcaption1; 
+}
+.figcaption2{ 
+    grid-area: figcaption2; 
+}
+.figcaption3{ 
+    grid-area: figcaption3; 
+}
+.figure4{ 
+    grid-area: figure4; 
+}
+.figure5{ 
+    grid-area: figure5; 
+}
+.figure6{ 
+    grid-area: figure6; 
+}
+.figcaption4{ 
+    grid-area: figcaption4; 
+}
+.figcaption5{ 
+    grid-area: figcaption5; 
+}
+.figcaption6{ 
+    grid-area: figcaption6; 
+}
+figcaption{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+.lista1{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*VISTA TABLET*/
+
+@media(min-width: 500px){
+
+    .trabajos{
+        flex-direction: row;
+        align-items: center;
+    }
+    .service1 .service2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*VISTA DESCKOP*/
+
+@media(min-width: 768px){
+    .icon:hover{
+        transform: scale(2);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+}
+
+/*VISTA TV*/
+
+@media(min-width: 1024px){
+
+    .titulo__service{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: 'Poppins', sans-serif;
+    }
+    .ubicacion1{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+    }
+    .servicios__lista{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .icon{
+        width: 48px;
+        height: 48px;
+    }
+}

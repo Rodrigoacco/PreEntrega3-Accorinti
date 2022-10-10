@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: lightgrey;
+}
+@media (min-width: 768px) {
+  body {
+    background-color: antiquewhite;
+  }
+}
+
+.titulo {
+  background-image: url(../img/taller-mecanicocel.jpg);
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 200px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+@media (min-width: 768px) {
+  .titulo {
+    background-image: url(../img/taller-mecanico1.jpg);
+    line-height: 550px;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+}
+
+.info {
+  padding: 4%;
+  margin: 2%;
+  font-family: "Roboto", sans-serif;
+  border: solid;
+}
+@media (min-width: 768px) {
+  .info {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .info {
+    padding-top: 5%;
+    margin-left: 3%;
+    margin-right: 60%;
+    text-align: center;
+  }
+}
+
+.video {
+  height: 220px;
+  width: 320px;
+  padding-top: 5%;
+}
+@media (min-width: 500px) {
+  .video {
+    height: 420px;
+    width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .video {
+    margin-left: 130%;
+  }
+}
+
+.nosotros__trabajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+@media (min-width: 1024px) {
+  .nosotros__trabajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "title title title title" "parrafo parrafo photo1 photo2" "parrafo parrafo photo3 photo4";
+  }
+}
+.nosotros__trabajos .title {
+  grid-area: title;
+}
+.nosotros__trabajos .parrafo {
+  grid-area: parrafo;
+}
+.nosotros__trabajos .photo1 {
+  grid-area: photo1;
+}
+.nosotros__trabajos .photo2 {
+  grid-area: photo2;
+}
+.nosotros__trabajos .photo3 {
+  grid-area: photo3;
+}
+.nosotros__trabajos .photo4 {
+  grid-area: photo4;
+}
+
+.seguros {
+  padding: 3%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 1024px) {
+  .seguros {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.seguros1 {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .seguros1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .seguros1 {
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-evenly;
+  }
+}
+
+.seguros2 {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .seguros2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .seguros2 {
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-evenly;
+    margin-top: 4%;
+  }
+}
+
+.imagen__logo {
+  height: 300px;
+  width: 300px;
+}
+@media (min-width: 500px) {
+  .imagen__logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .imagen__logo {
+    height: auto;
+    width: auto;
+  }
+}
+
+.contacto {
+  padding: 3%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 1024px) {
+  .contacto {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.ubicacion2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 110%;
+  padding: 3%;
+}
+@media (min-width: 1024px) {
+  .ubicacion2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.ubicacion3 {
+  height: 220px;
+  width: 320px;
+  padding: 3%;
+}
+@media (min-width: 500px) {
+  .ubicacion3 {
+    height: 450px;
+    width: 768px;
+    padding: 3%;
+  }
+}
+@media (min-width: 1024px) {
+  .ubicacion3 {
+    width: 600px;
+    height: 400px;
+    padding: 0%;
+  }
+}
+
+.hoy {
+  font-family: "Roboto", sans-serif;
+  padding: 2%;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .hoy {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.formulario {
+  padding: 3%;
+  margin: 3%;
+}
+@media (min-width: 1024px) {
+  .formulario {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.pie__de--pagina {
+  padding: 4%;
+  background-color: rgb(50, 50, 50);
+  font-family: "Roboto", sans-serif;
+}
+@media (min-width: 1024px) {
+  .pie__de--pagina {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.trayectoria {
+  padding-bottom: 2%;
+  color: white;
+}
+@media (min-width: 1024px) {
+  .trayectoria {
+    margin-left: 5%;
+    margin-right: 10%;
+    padding: 5% 5% 5% 0%;
+    color: white;
+  }
+}
+
+.servicios {
+  padding-bottom: 2%;
+  color: white;
+}
+@media (min-width: 1024px) {
+  .servicios {
+    margin-right: 10%;
+    padding: 5% 5% 5% 0%;
+    color: white;
+    justify-items: center;
+  }
+}
+
+.visitanos {
+  color: white;
+}
+@media (min-width: 1024px) {
+  .visitanos {
+    padding: 5% 5% 5% 0%;
+    margin-right: 5%;
+    color: white;
+  }
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4%;
+  margin: 1%;
+}
+@media (min-width: 1024px) {
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 5%;
+  }
+}
+
+.container-fluid {
+  background-color: lightslategray;
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  height: 100px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  align-items: center;
+  justify-content: center;
+  font-size: 120%;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    background-color: rgb(50, 50, 50);
+    font-family: "Roboto", sans-serif;
+    margin-top: 5%;
+  }
+}
+/*mobile first*/
+/*CUERPO*/
+.subtitulo {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.titulo__nosotros {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 3%;
+  padding-bottom: 5%;
+}
+
+.parrafo__nosotros {
+  font-family: "Poppins", sans-serif;
+  font-size: 120%;
+}
+
+.service {
+  margin: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "title title title" "figure1 figure2 figure3" "figcaption1 figcaption2 figcaption3" "figure4 figure5 figure6" "figcaption4 figcaption5 figcaption6";
+}
+
+.title {
+  grid-area: title;
+  padding: 3%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.figure1 {
+  grid-area: figure1;
+}
+
+.figure2 {
+  grid-area: figure2;
+}
+
+.figure3 {
+  grid-area: figure3;
+}
+
+.figcaption1 {
+  grid-area: figcaption1;
+}
+
+.figcaption2 {
+  grid-area: figcaption2;
+}
+
+.figcaption3 {
+  grid-area: figcaption3;
+}
+
+.figure4 {
+  grid-area: figure4;
+}
+
+.figure5 {
+  grid-area: figure5;
+}
+
+.figure6 {
+  grid-area: figure6;
+}
+
+.figcaption4 {
+  grid-area: figcaption4;
+}
+
+.figcaption5 {
+  grid-area: figcaption5;
+}
+
+.figcaption6 {
+  grid-area: figcaption6;
+}
+
+figcaption {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+.lista1 {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*VISTA TABLET*/
+@media (min-width: 500px) {
+  .trabajos {
+    flex-direction: row;
+    align-items: center;
+  }
+  .service1 .service2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*VISTA DESCKOP*/
+@media (min-width: 768px) {
+  .icon:hover {
+    transform: scale(2);
+    transition-property: all;
+    transition-duration: 2s;
+  }
+}
+/*VISTA TV*/
+@media (min-width: 1024px) {
+  .titulo__service {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Poppins", sans-serif;
+  }
+  .ubicacion1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+  }
+  .servicios__lista {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
